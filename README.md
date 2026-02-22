@@ -14,8 +14,8 @@ This repository contains an implementation of the Hidden Markov Model (HMM) trai
 
 ## Project Structure
 - `hmm.py`: Contains the `HMM` class with Forward, Backward, and Baum-Welch implementations.
-- `visualization.py`: Utilities for plotting convergence and transition diagrams.
-- `main.py`: Interactive entry point to run the algorithm.
+- `visualization.py`: Utilities for generating plotting objects for convergence and transition diagrams.
+- `app.py`: Interactive Streamlit web-based UI to run the algorithm.
 
 ## How to Run
 
@@ -35,18 +35,17 @@ This repository contains an implementation of the Hidden Markov Model (HMM) trai
    ```
 
 ### Running the Program
-Run the following command and follow the prompts:
+Run the following command in your terminal to start the visual interactive web app using Streamlit:
 ```bash
-python main.py
+streamlit run app.py
 ```
-- It will ask for an observed sequence (e.g., `0,1,0,1,1,0`).
-- It will ask for the number of hidden states (e.g., `2`).
+- It will automatically open in a browser where you can enter the Sequence and Number of Hidden States continuously.
 
 ## Visualizations
-The program generates the following files after execution:
-- `convergence.png`: Shows how the log-likelihood $P(O|\lambda)$ changes over iterations.
-- `transitions.png`: A state transition diagram showing probabilities between states.
-- `emissions.png`: A heatmap of the emission matrix.
+The UI dynamically generates and displays the following plots intuitively in different web tabs:
+- **Convergence Plot**: Shows how the log-likelihood $P(O|\lambda)$ changes over iterations.
+- **State Transition Diagram**: A directed graph representation showing probabilities between states.
+- **Emission Matrix Setup**: A heatmap of the emission matrix.
 
 ## Troubleshooting
 
