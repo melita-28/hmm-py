@@ -3,8 +3,8 @@
 This repository contains an implementation of the Hidden Markov Model (HMM) training using the Baum-Welch algorithm (Expectation-Maximization) from scratch in Python.
 
 ## Student Information
-- **Name:** [Your Name]
-- **University Register Number:** TCR24CS....
+- **Name:** Melita Mariam Mathew
+- **University Register Number:** TCR24CS046
 
 ## Assignment Requirements
 - [x] Implement Baum-Welch algorithm.
