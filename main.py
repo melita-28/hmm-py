@@ -21,8 +21,10 @@ def main():
     n_states_input = input("Enter number of hidden states (default 2): ")
     n_states = int(n_states_input) if n_states_input else 2
     
-    n_obs_types = len(np.unique(obs_seq))
-    if n_obs_types < 2: n_obs_types = 2 # At least 2 for variety
+    # The number of possible observation types must include at least the highest number in the sequence.
+    # For example, if the sequence includes '9', we need at least 10 possible types (0-9).
+    n_obs_types = int(np.max(obs_seq)) + 1
+    if n_obs_types < 2: n_obs_types = 2 
     
     hmm = HMM(n_states=n_states, n_observations=n_obs_types)
     
