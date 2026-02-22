@@ -26,7 +26,7 @@ This repository contains an implementation of the Hidden Markov Model (HMM) trai
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/melita-28/hmm-py.git
    cd hmm-baum-welch
    ```
 2. Install dependencies:
